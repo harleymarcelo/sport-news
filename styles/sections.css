@@ -1,0 +1,112 @@
+#featured {
+  margin: 25px;
+  img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .card {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(180deg, transparent 0%, #020617 100%);
+    }
+
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      padding: 24px;
+
+      &:has(.text-lg) {
+        padding: 12px;
+      }
+
+      h2 {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background: #6c757d;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: -14px;
+  width: -webkit-fill-available;
+  margin-right: 65px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #2c3e50;
+  outline: none;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #34495e;
+}
+
+.newsletter {
+  width: 50vw;
+  display: flex;
+  margin-left: 42px;
+}
+
+.carossel,
+.carossel2,
+.carossel3 {
+  padding: 40px;
+  height: 650px;
+  width: 100%;
+  margin: 4px;
+}
+
+span {
+  font-weight: bolder;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: xx-large;
+  color: black;
+  box-shadow: #020617;
+}
+#nome {
+  background-color: white;
+}
+
+#email {
+  border-color: var(--verde);
+}
